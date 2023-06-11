@@ -147,9 +147,9 @@ function Contact() {
           {selectedConId === cn.id && (
             <div className='contact-details'>
              <p><FontAwesomeIcon icon={faUser} /> {cn.user_id}</p>
-  <p><FontAwesomeIcon icon={faBuilding} /> {cn.organization}</p>
-  <p><FontAwesomeIcon icon={faGlobe} /> {cn.nationality}</p>
-  <p><FontAwesomeIcon icon={faGenderless} /> {cn.gender}</p>
+       <p><FontAwesomeIcon icon={faBuilding} /> {cn.organization}</p>
+       <p><FontAwesomeIcon icon={faGlobe} /> {cn.nationality}</p>
+       <p><FontAwesomeIcon icon={faGenderless} /> {cn.gender}</p>
               <button onClick={() => editContact(cn.id)}>Edit</button>
               <button onClick={() => deleteContact(cn.id)}>Delete</button>
             </div>
