@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faBuilding, faGlobe, faGenderless } from '@fortawesome/free-solid-svg-icons';
 
-
 function Contact() {
   const [contact, setContact] = useState([]);
   const [pers, setPers] = useState('');
