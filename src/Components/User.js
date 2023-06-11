@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faEnvelope, faPhone, faMapMarker, faHeart } from '@fortawesome/free-solid-svg-icons';
 
-
 function User() {
   const [users, setUsers] = useState([]);
   const [person, setPerson] = useState('');
