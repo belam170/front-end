@@ -1,13 +1,198 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  background-image: url("https://images.unsplash.com/photo-1577563820627-bc12aa2139de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNvbnRhY3QlMjBtYW5hZ2VyfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60");
+  background-position: center;
+  background-size: cover;
+}
+.start h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 900;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  animation: rainbow 4s linear infinite;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@keyframes rainbow {
+  0% { color: #FF5252; }
+  20% { color: #FFD500; }
+  40% { color: #4CAF50; }
+  60% { color: #2196F3; }
+  80% { color: #9C27B0; }
+  100% { color: #FF5252; }
+}
+.User {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.UserCard {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 240px;
+  margin-right: 290px;
+  
+}
+
+.UserCard p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.UserCard p span {
+  margin-left: 8px;
+}
+
+.UserCardButtons {
+  margin-top: 16px;
+}
+
+.UserCardButtons button {
+  background-color: #2196F3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+.UserCardButtons button:hover {
+  background-color: #1976D2;
+}
+.UserForm {
+  position: fixed;
+  bottom: 250px;
+  right: 690px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 240px;
+}
+
+.UserForm input {
+  width: 100%;
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.UserForm button {
+  background-color: #2196F3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.UserForm button:hover {
+  background-color: #1976D2;
+}
+.box {
+  width: 20%;
+  height: 100vh;
+  background-color: #4CAF50;
+  position: fixed;
+  top: 20px;
+  right: 1px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  color: #ffffff;
+}
+.beaut button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  background-color: #2196F3;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.beaut button:hover {
+  background-color: #1976D2;
+}
+
+.beaut button:active {
+  background-color: #3e8940;
+}
+
+.beaut {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.beaut input {
+  margin-bottom: 8px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.beaut button {
+  margin-top: 8px;
+}
+
+.contact {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact:hover {
+  background-color: #f5f5f5;
+}
+
+.contact p {
+  margin: 0;
+  color: #333;
+}
+
+.contact p:first-of-type {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.contact p:not(:first-of-type) {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.contact p:last-of-type {
+  margin-bottom: 10px;
+}
+
+.contact button {
+  display: block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+  background-color: #e53935;
 }
